@@ -1,0 +1,349 @@
+
+    <html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Market Signal Dashboard</title>
+        <style>
+            body { font-family: Arial, sans-serif; padding: 40px; background: #fafafa; color: #222; }
+            table { border-collapse: collapse; margin-top: 20px; width: 90%; }
+            th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: center; }
+            th { background-color: #f2f2f2; }
+            td { font-size: 1.1em; }
+            h2 { margin-top: 40px; color: #333; }
+        </style>
+    </head>
+    <body>
+        <h1>Market Signal Dashboard</h1>
+        <h2>Commodities</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Asset</th>
+      <th>Symbol</th>
+      <th>Signal</th>
+      <th>Inside Week</th>
+      <th>Inside PW Range</th>
+      <th>HOM</th>
+      <th>HOW</th>
+      <th>FRD</th>
+      <th>LOM</th>
+      <th>LOW</th>
+      <th>FGD</th>
+      <th>Inside Day</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WTI Crude Oil</td>
+      <td>CL=F</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Gold</td>
+      <td>GC=F</td>
+      <td>–</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Silver</td>
+      <td>SI=F</td>
+      <td>–</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Copper</td>
+      <td>HG=F</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Platinum</td>
+      <td>PL=F</td>
+      <td>–</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Natural Gas</td>
+      <td>NG=F</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+    </tr>
+  </tbody>
+</table><h2>Indices</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Asset</th>
+      <th>Symbol</th>
+      <th>Signal</th>
+      <th>Inside Week</th>
+      <th>Inside PW Range</th>
+      <th>HOM</th>
+      <th>HOW</th>
+      <th>FRD</th>
+      <th>LOM</th>
+      <th>LOW</th>
+      <th>FGD</th>
+      <th>Inside Day</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S&P 500</td>
+      <td>^GSPC</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Nasdaq 100</td>
+      <td>^NDX</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Dow Jones</td>
+      <td>^DJI</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>FTSE 100</td>
+      <td>^FTSE</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Nikkei 225</td>
+      <td>^N225</td>
+      <td><span style='color:red;font-weight:bold;'>SHORT</span></td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+  </tbody>
+</table><h2>FX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Asset</th>
+      <th>Symbol</th>
+      <th>Signal</th>
+      <th>Inside Week</th>
+      <th>Inside PW Range</th>
+      <th>HOM</th>
+      <th>HOW</th>
+      <th>FRD</th>
+      <th>LOM</th>
+      <th>LOW</th>
+      <th>FGD</th>
+      <th>Inside Day</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EUR/USD</td>
+      <td>EURUSD=X</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>GBP/USD</td>
+      <td>GBPUSD=X</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>USD/JPY</td>
+      <td>USDJPY=X</td>
+      <td><span style='color:red;font-weight:bold;'>SHORT</span></td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>AUD/USD</td>
+      <td>AUDUSD=X</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>USD/CAD</td>
+      <td>USDCAD=X</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+    </tr>
+  </tbody>
+</table><h2>Crypto</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Asset</th>
+      <th>Symbol</th>
+      <th>Signal</th>
+      <th>Inside Week</th>
+      <th>Inside PW Range</th>
+      <th>HOM</th>
+      <th>HOW</th>
+      <th>FRD</th>
+      <th>LOM</th>
+      <th>LOW</th>
+      <th>FGD</th>
+      <th>Inside Day</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bitcoin</td>
+      <td>BTC-USD</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Ethereum</td>
+      <td>ETH-USD</td>
+      <td>–</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>❌</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Last updated: 2025-11-05 18:20 UTC</p>
+    </body>
+    </html>
+    
