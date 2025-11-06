@@ -77,13 +77,22 @@ def in_previous_week_range(data):
     weekly = get_weekly_data(data)
     if len(weekly) < 2:
         return False
-    lw_high, lw_low = weekly["High"].iloc[-1], weekly["Low"].iloc[-1]
-    this_week = data.loc[data.index.isocalendar().week ==
-                         data.index[-1].isocalendar().week]
+
+    # Use the *previous* completed week (not current one)
+    prev_week_high = weekly["High"].iloc[-2]
+    prev_week_low  = weekly["Low"].iloc[-2]
+
+    # Get data for current (still forming) week
+    current_week_number = data.index[-1].isocalendar().week
+    this_week = data.loc[data.index.isocalendar().week == current_week_number]
     if this_week.empty:
         return False
-    cw_high, cw_low = this_week["High"].max(), this_week["Low"].min()
-    return (cw_high <= lw_high) and (cw_low >= lw_low)
+
+    curr_high = this_week["High"].max()
+    curr_low  = this_week["Low"].min()
+
+    return (curr_high <= prev_week_high) and (curr_low >= prev_week_low)
+
 
 # --- Daily logic based on last fully closed session ---
 def is_high_of_month(data):  return data["High"].iloc[-2] == data["High"].tail(22).max()
