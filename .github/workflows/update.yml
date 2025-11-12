@@ -3,7 +3,8 @@ name: Update Dashboard
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 6 * * *"  # Runs daily at 06:00 UTC (~1am NY time)
+    # Runs once daily at 23:05 UTC (~6:05 PM New York)
+    - cron: '5 23 * * *'
 
 permissions:
   contents: write
